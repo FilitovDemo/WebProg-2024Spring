@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>註冊資料表</title>
+</head>
+<body>
+    <h1>註冊資料表</h1>
+    
+    <form method="GET" action="banana.php">
+    
+    <fieldset>
+        <legend>基本資料</legend>
+        <dl>
+            <dt>帳號</dt>
+            <dd><input type="text" name="uname" placeholder="4到8個英數字組成"></dd>
+            <dt>密碼</dt>
+            <dd><input type="password" name="upwd" placeholder="4到8個英數字組成"></dd>
+        </dl>
+    </fieldset>
+    <fieldset>
+        <legend>其他設定</legend>
+        <dl>
+            <dt>名字</dt>
+            <dd><input type="text" name="realname"></dd>
+            <dt>身分</dt>
+            <dd>
+                <input type="radio" name="cha" id="cha1" value="1"><label for="cha1">老師</label>
+                <input type="radio" name="cha" id="cha2" value="2"><label for="cha2">學生</label>
+                <input type="radio" name="cha" id="cha3" value="3" checked><label for="cha3">都不是</label>
+            </dd>
+            <dt>種族</dt>
+            <dd>
+                <input type="radio" name="rac" id="rac1" value="1"><label for="rac1">動物</label>
+                <input type="radio" name="rac" id="rac2" value="2"><label for="rac2">植物</label>
+                <input type="radio" name="rac" id="rac3" value="3"><label for="rac3">礦物</label>
+            </dd>
+            <dt>興趣</dt>
+            <dd>
+                <label for="int1">打球</label><input type="checkbox" name="int1" id="int1">
+                <label for="int2">聽音樂</label><input type="checkbox" name="int2" id="int2">
+                <label for="int3">跳舞</label><input type="checkbox" name="int3" id="int3">
+                <label for="int4">打麻將</label><input type="checkbox" name="int4" id="int4">
+                <label for="int5">騎車</label><input type="checkbox" name="int5" id="int5">
+            </dd>
+            <dt>來源</dt>
+            <dd>
+                <select name="orig">
+                    <option value="1">自己來的</option>
+                    <option value="2">朋友介紹</option>
+                    <option value="3" selected>網路搜尋</option>
+                </select>
+            </dd>
+        </dl>
+    </fieldset>
+    <input type="reset">
+    <input type="submit">
+    </form>
+
+
+</body>
+</html>

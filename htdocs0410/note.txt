@@ -1,0 +1,43 @@
+index.html
+index.php
+index.js
+index.????
+
+default.html
+defalut.asp
+
+http://localhost/apple.html
+http://localhost/banana.php
+
+
+fieldset
+legend
+
+!相反
+
+isset() 有設定嗎?
+empty() 是空白嗎?
+
+
+if (條件) {
+    條件成立要做的事情
+} else {
+    條件不成立時要做的事情
+}
+
+//處理名字 (假設是可有可無)
+if ( !isset($_GET['realname']) || empty($_GET['realname']) ) { //未設定 或 空值
+    $rname = '無名氏';          //預設值
+} else {
+    $rname = $_GET['realname'];
+}
+
+空白 算不算 無名氏
+
+
+//處理名字 (假設是可有可無)
+if ( !isset($_GET['realname']) ) { //未設定
+    $rname = '無名氏';          //預設值
+} else {
+    $rname = $_GET['realname'];
+}
