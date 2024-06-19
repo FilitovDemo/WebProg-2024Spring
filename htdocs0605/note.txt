@@ -1,0 +1,28 @@
+<?php
+# 連線
+$db = new PDO('mysql:host=localhost;dbname=demo2024;charset=utf8mb4','test1234','1234');
+# 指令
+$stmt = $db->prepare('SQL指令');      #準備指令
+$stmt->execute();                     #送出,執行
+# (如果有)結果
+$stmt->fetch()   #取回一筆結果 (一個橫列)
+$stmt->fetchAll()  #取回全部結果
+
+# PDO::FETCH_OBJ  每筆資料用物件的形式呈現
+# PDO::FETCH_ASSOC 用關係陣列(字典)呈現
+# PDO::FETCH_BOTH (預設)清單及字典同時
+
+#------------------------------------------------------
+select 選擇/查詢/從資料表中選取特定的欄位的資料
+
+select 欄位 from 資料表
+select 欄位1,欄位2,欄位3,欄位4 from 資料表
+select * from 資料表
+      全部
+
+
+insert 新增資料
+insert into 資料表 (欄位) values (欄位值)
+insert into 資料表 (欄位,欄位,欄位) values (欄位值,欄位值,欄位值)
+
+insert into messagebox (Author,Message) values ('alice','this is a book')
